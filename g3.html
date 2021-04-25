@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 80%;
+            height: 400px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": 0, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": 277, "y": 0}, {"id": 1, "label": "N", "physics": true, "shape": "dot", "size": 30, "x": 127, "y": 0}, {"id": 2, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": 39, "y": 121}, {"id": 3, "label": "N", "physics": true, "shape": "dot", "size": 30, "x": -103, "y": 75}, {"id": 4, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": -103, "y": -75}, {"id": 5, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": 39, "y": -121}, {"id": 6, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": 70, "y": -268}, {"id": 7, "label": "O", "physics": true, "shape": "dot", "size": 30, "x": 213, "y": -314}, {"id": 8, "label": "N", "physics": true, "shape": "dot", "size": 30, "x": -40, "y": -368}, {"id": 9, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": -183, "y": -322}, {"id": 10, "label": "O", "physics": true, "shape": "dot", "size": 30, "x": -294, "y": -422}, {"id": 11, "label": "N", "physics": true, "shape": "dot", "size": 30, "x": -214, "y": -175}, {"id": 12, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": -357, "y": -129}, {"id": 13, "label": "C", "physics": true, "shape": "dot", "size": 30, "x": -9, "y": -515}]);
+        edges = new vis.DataSet([{"from": 0, "to": 1}, {"from": 1, "to": 2}, {"from": 2, "to": 3}, {"from": 3, "to": 4}, {"from": 4, "to": 5}, {"from": 5, "to": 6}, {"from": 6, "to": 7}, {"from": 6, "to": 8}, {"from": 8, "to": 9}, {"from": 9, "to": 10}, {"from": 9, "to": 11}, {"from": 11, "to": 12}, {"from": 8, "to": 13}, {"from": 5, "to": 1}, {"from": 11, "to": 4}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"nodes": {"borderWidth": 2, "borderWidthSelected": 4}, "edges": {"width": 24}, "physics": {"barnesHut": {"gravitationalConstant": -2000, "centralGravity": 0, "springLength": 60, "springConstant": 0.545, "damping": 0.1, "avoidOverlap": 0.52}, "maxVelocity:": 50, "minVelocity": 0.75, "timestep": 0.5}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
