@@ -43,7 +43,7 @@ class ItemRecommender():
             self.item_names = self.similarity_df.index
 
         
-    def get_recommendations(self, item, n=5):
+    def get_recommendations(self, item, n=20):
         '''
         Returns the top n items related to the item passed in
         INPUT:
@@ -77,7 +77,7 @@ class ItemRecommender():
         return user_profile
 
 
-    def get_user_recommendation(self, items, n=5):
+    def get_user_recommendation(self, items, n=20):
         '''
         Takes a list of movies user liked and returns the top n items for that user
 
