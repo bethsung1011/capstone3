@@ -3,7 +3,7 @@
 
 ### Overview
 
-Hello, My name is Beth Sung, I am a formal Account Payable in winey in Napa  turned data scientist. Unsupervised machine learning is my current passion and matchmaker using this technique plays roles. 
+Hello, My name is Beth Sung, I am a formal Account Payable in winey in Napa turned data scientist. Unsupervised machine learning is my current passion and matchmaker using this technique plays roles. 
  ​
 The goal of this project is to find the possible best match using unsupervised machine learning algorithms with given data.  Unlike machine learning, the characteristic of Unsupervised learning is No labels. No target. (or we say No gods. No masters.) so the use case of this scenario can be that I have a database of users with their attributes and I want to draw profiles using this technique. 
 
@@ -58,5 +58,6 @@ The solution ​is to create the schema in the database and store based on input
 New features to implement ​is the Gensim Doc2Vec approach for NLP​​.
 
 
+### Tools
 
-
+[](https://github.com/bethsung1011/capstone3/blob/main/img/source.png)
