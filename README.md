@@ -21,18 +21,21 @@ In order to increase your match percentage, you can answer optional questions th
 
 
 
-## The Data Process
+## Flow
 
 
 ![](https://github.com/bethsung1011/capstone3/blob/main/img/Machine-Learning-Explained2.png)
 
 Flow is started like this. Get data, Clean, Prepare, Manipulate data  - >  Discover  latent variables and analyze what this means. -> Do Feature engineering, preprocessing and Autoencoding for making smaller representations of the original data as in data compression. -> Train test and Evaluate improve the model  
 
+## Recommender Systems​
+​
 ![](https://github.com/bethsung1011/capstone3/blob/main/img/recommend.png)
 
 Not like movie recommenders or product reviews, there are no harsh ratings between people. We cannot say like this person is 1 start or that person is 5 stars. ​ We are all different.  Predictions are made based on the properties or characteristics of the user.  
 
 ![](https://github.com/bethsung1011/capstone3/blob/main/img/cosine_similarity.png)
+
 I focus on content based filtering between user and user. In general, people tend to get attracted to similar-looking or similar preferences. 
 
 
