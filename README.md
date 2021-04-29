@@ -3,23 +3,23 @@
 
 ### Overview
 
-## The Data
+### The Data
 
-## The Data Wrangling Process
+### The Data Wrangling Process
 
-## Outlining big data tools used
+### Outlining big data tools used
 
-## Forming YourData Pipeline
+### Forming YourData Pipeline
 
-## The Statistical Analysis Process
+### The Statistical Analysis Process
 
-## EDA
+### EDA
 
-## Subjects studied in greater detail
+### Subjects studied in greater detail
 
-## Future Implementation Considerations
+### Future Implementation Considerations
 
-## Conclusion
+### Conclusion
 
-## Sources
+### Sources
 
