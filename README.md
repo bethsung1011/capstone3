@@ -60,4 +60,4 @@ New features to implement ​is the Gensim Doc2Vec approach for NLP​​.
 
 ### Tools
 
-[](https://github.com/bethsung1011/capstone3/blob/main/img/source.png)
+![](https://github.com/bethsung1011/capstone3/blob/main/img/source.png)
